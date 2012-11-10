@@ -7,7 +7,7 @@
 var WINDOW_HEIGHT_PERCENT = 0.95
   , NEWS_SCROLL_SPEED     = 500
   , NUM_NEWS_ITEMS        = 2
-  , ABS_MIN_PAGE_HEIGHT   = 520;
+  , ABS_MIN_PAGE_HEIGHT   = 490;
 
 
 $(function(){
