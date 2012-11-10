@@ -1,7 +1,7 @@
 $(function(){
 
 	$(window).resize(function() {
-		$(".full_height").css('height', $(window).height()*0.85);
+		$(".full_height").css('min-height', $(window).height()*0.85);
 		$(".full_height:last").css('min-height', $(window).height());
 	}).trigger('resize');
 	
@@ -21,15 +21,17 @@ $(function(){
 		} else {
 			$('#content_pane').load($(this).attr('href')+' .wrapper', function(load){
 				$('#main_page_nav')
-					.animate({'margin-left': (($('#main_nav').width()+50)*-1) + 'px'})
-					.height($('#content_pane .wrapper').height()).addClass('resized');
+					.animate({'margin-left': (($('#main_nav').width()+50)*-1) + 'px'}, 1000, function(){
+						$(this).height($('#content_pane .wrapper').height()).addClass('resized');
+					})
+					
 			});
 		}
 
 		return false;
 	});
 
-	// load youtube video: 
+	// load youtube videos: 
 
 });
 
@@ -41,7 +43,6 @@ function getWPPosts() {
 			var content = stripEmptyP(stripImg(this.content));
 			content = content.match(/\<p(.*)\<\/p\>/ig)[0];
 			$("ul#news").append('<li><img src="'+this.thumbnail+'" /><h3>'+this.title+'</h3><p>'+content+'</p></li>');
-			
 			i++;
 		});
 	});

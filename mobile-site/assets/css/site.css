@@ -162,18 +162,19 @@ ul#main_nav li .ui-icon {
 	width: 50%;
 	margin-left:-20px; 
 	*/
-	margin-left:-10px;
 	width: 50%;
 	height: 100%;
 	
 	position:relative;
 	vertical-align: top;
-	display: inline-block;
+	/*display: inline-block;*/
+	float: left;
 }
 
 #content_pane {
 	width: 50%;
-	display: inline-block;
+	float: left;
+	/*display: inline-block;*/
 	height:100%;
 	vertical-align: top;
 	position: relative;
