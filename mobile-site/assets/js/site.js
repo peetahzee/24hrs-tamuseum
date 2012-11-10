@@ -11,7 +11,15 @@ $(function(){
 		zIndex++;
 	});
 
-	
+	$('#main_nav a').click(function(evt){
+		evt.preventDefault();
+
+		$('#content_pane').load($(this).attr('href')+'#wrapper')
+
+		return false;
+	});
+
+	// load youtube video: 
 
 });
 
