@@ -23,6 +23,10 @@ html, body {
 	width: 500px;
 }
 
+#main_page {
+	text-align: right;
+	width: 384px;
+}
 
 #main_page_head {
 	background: url(../images/front_bg.jpg) no-repeat;

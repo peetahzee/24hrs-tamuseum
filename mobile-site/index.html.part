@@ -15,3 +15,22 @@
         <li><a href="bmw.html">Contact &gt; </a></li>
     </ul>
 </div>
+
+
+
+<div id="main_page" data-role="page">
+    
+    <div id="main_page_head" class="full_height">
+        <div id="logo"></div>
+    </div>
+
+
+    <div class="full_height" style="background: url(assets/images/test.jpg)">
+        <ul id="main_nav" data-role="listview">
+            <li><a href="acura.html">About &gt; </a></li>
+            <li><a href="audi.html">News &gt; </a></li>
+            <li><a href="bmw.html">Contact &gt; </a></li>
+        </ul>
+    </div>
+
+</div>
