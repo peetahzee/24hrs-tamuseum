@@ -30,12 +30,35 @@ html, body {
 	padding: 10px 29px;
 	background-size: 100%;
 	text-align: center;
+	position: relative;
 }
 #main_page_nav {
 	padding: 10px 29px;
 }
 
+#main_page_head h1 {
 	text-align: left;
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	font-family: 'Ubuntu Condensed', sans-serif !important;
+	font-size: 40px;
+	line-height: 35px;
+	margin: 0 0 6px 0;
+	padding: 0;
+	text-transform: lowercase;
+	position: absolute;
+	bottom: 50px;
+}
+#main_page_head p {
+	text-align: left;
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0,0,0,1);
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 30px;
+}
+
 #logo {
 	width: 90%;
 	padding: 0;
