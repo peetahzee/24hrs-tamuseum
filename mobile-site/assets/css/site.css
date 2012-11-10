@@ -192,25 +192,23 @@ ul#main_nav li .ui-icon {
 	/*height: 200px;*/
 	background-image: no-repeat;
 	text-align: left;
-	font-family: "Helvetica Neue";
-	border-top: 5px solid gray;
-	border-bottom: 5px solid gray;
 	background-size:100%;
 }
 .about_title { /* can't override jq mobile! */
 	color: white;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+	font-family: 'Ubuntu Condensed', sans-serif !important;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 40px;
 	height: 400px;
 	padding: 10px;
 }
 .about_description {
-	text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
 	background: none;
 	color: white;
 	padding: 10px 10px 0 10px;
-	bottom: 40px;
+	bottom: 30px;
 	position: relative;
 }
 .about_link {
