@@ -21,8 +21,6 @@ html, body {
 	font-family: "Helvetica Neue";
 }
 
-#wrapper {
-}
 
 #main_page {
 	text-align: right;
@@ -34,9 +32,6 @@ html, body {
 	background-size: 100%;
 	text-align: center;
 	position: relative;
-}
-#main_page_nav {
-	padding: 10px 29px;
 }
 
 #main_page_head h1 {
@@ -73,6 +68,7 @@ html, body {
 
 ul#main_nav {
 	padding-top: 20px;
+	padding-right: 50px;
 }
 ul#main_nav li {
 	background: 0;
@@ -99,6 +95,37 @@ ul#main_nav li .ui-btn-inner {
 ul#main_nav li .ui-icon {
 	display: none;
 }
+
+
+/* navigation pane */
+
+#main_page {
+	overflow: hidden;
+}
+
+#nav_pane {
+	background: url(../images/test.jpg);
+	width: 50%;
+	height: 100%;
+	position:relative;
+	float:left;
+
+}
+
+#content_pane {
+	width: 50%;
+	position:relative;
+	float:left;
+	height:100%;
+}
+
+#main_page_nav {
+	width: 200%;
+}
+
+
+
+/* end nav pane */
 
 /* about stuff */
 .about_block {
