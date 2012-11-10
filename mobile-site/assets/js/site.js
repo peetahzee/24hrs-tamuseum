@@ -94,18 +94,21 @@ function getWPPosts(){
 		var i = 0;
 		$("ul#news").html("");
 		$(data.posts).each(function() {
-	
-			if(i > NUM_NEWS_ITEMS) return;
+			if(i > NUM_NEWS_ITEMS || checkCategory(this.categories, 21) || checkCategory(this.categories, 22)) {
+				console.log(this);
+				return;
+			}
 			var content = stripEmptyP(stripImg(this.content));
 			if(content.match(/\<p(.*)\<\/p\>/ig) != null) {
 				content = content.match(/\<p(.*)\<\/p\>/ig)[0];
-				var t = '';
+				
 				// check if youtube
 				var youtubeID = content.match(/\/embed\/([0-9a-zA-Z]+)/i);
 				if(youtubeID != null) {
 					youtubeID = youtubeID[1];
 					content = '<img class="youtube_image" src="http://img.youtube.com/vi/'+youtubeID+'/2.jpg" />';
 				} 
+				var t = '';
 				if(this.thumbnail != null && this.thumbnail != undefined) { t = '<img src="'+this.thumbnail+'" />'; }
 				$("ul#news").append('<a href="'+this.url+'"><li>'+t+'<h3>'+this.title+'</h3><p>'+content+'</p></li></a>');
 				i++;
@@ -120,6 +123,13 @@ function getWPPosts(){
 
 		}
 	}
+}
+
+function checkCategory(categories, target) {
+	for(var i = 0; i < categories.length; i++) {
+		if(categories[i].id == target) return true;
+	};
+	return false;
 }
 
 function stripImg(content) {

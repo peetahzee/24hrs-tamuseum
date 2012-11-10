@@ -32,7 +32,17 @@
     
     <div id="main_page_news" class="full_height">
         <h1>Updates</h1>
-        <ul id="news">
+        <ul id="news" class="news_list">
+        loading...
+        </ul>
+        
+        <h1>Aviation</h1>
+        <ul id="aviation" class="news_list">
+        loading...
+        </ul>
+        
+        <h1>From Executive Director</h1>
+        <ul id="aviation" class="news_list">
         loading...
         </ul>
         
