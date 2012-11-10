@@ -94,7 +94,6 @@ function getWPPosts(){
 		$("ul.news_list").html("");
 
 		$(data.posts).each(function(el, i) {
-			console.log(['num', el, i]);
 
 			var content = stripEmptyP(stripImg(this.content));
 			if(content.match(/\<p(.*)\<\/p\>/ig) != null) {
