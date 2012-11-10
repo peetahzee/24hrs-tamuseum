@@ -1,32 +1,29 @@
-const FULL_HEIGHT_PERCENTAGE = 0.85;
-const NEWS_SCROLL_DURATION = 500;
-const SLIDE_DURATION = 500; 
-const NEWS_TO_SHOW = 5;
+
+// Mobile App Settings
+var WINDOW_HEIGHT_PERCENT = 0.85
+  , NEWS_SCROLL_SPEED     = 500
+  , NUM_NEWS_ITEMS        = 5;
+
 
 $(function(){
 
-	$(document).ready(function() {
-		getWPPosts();
-	
-		var zIndex = 1;
-		$($(".full_height").get().reverse()).each(function() {
-			$(this).css("z-index", zIndex);
-			zIndex++;
-		});
-	});
-	
 	$(window).resize(function() {
-		$(".full_height").css('min-height', $(window).height() * FULL_HEIGHT_PERCENTAGE);
+		$(".full_height").css('min-height', $(window).height()*WINDOW_HEIGHT_PERCENT);
 		$(".full_height:last").css('min-height', $(window).height());
-		$('#main_page_nav:not(.expanded)').css('height', $(window).height()*0.85);
+		$('#main_page_nav:not(.expanded)').css('height', $(window).height()*WINDOW_HEIGHT_PERCENT);
 	}).trigger('resize');
+	
+	var zIndex = 1;
+	$($(".full_height").get().reverse()).each(function() {
+		$(this).css("z-index", zIndex);
+		zIndex++;
+	});
 
 	$('#main_nav a').click(function(evt){
 		evt.preventDefault();
 		if ($(this).is('#news')){
-			$('body').animate({scrollTop: $('#main_page_news').offset().top}, NEWS_SCROLL_DURATION);
+			$('body').animate({scrollTop: $('#main_page_news').offset().top}, 500);
 		} else {
-			//doNavigate($(this).attr('href'));
 			window.location.hash = '#!/' + $(this).attr('href');
 		}
 		return false;
@@ -35,9 +32,12 @@ $(function(){
 	function doNavigate(page){
 		$('#content_pane').load(page+' .wrapper', function(content){
 			$('#main_page_nav')
-				.animate({'margin-left': '-100%'}, SLIDE_DURATION, function(){
-					$(this).height($('#content_pane .wrapper').height()).addClass('expanded');
-				})
+				//.animate({'margin-left': '-100%'}, 1000, function(){
+					//$(this)
+						.height($('#content_pane .wrapper').height())
+						.addClass('expanded');
+				//});
+			$(window).resize();
 		});
 	}
 
@@ -48,28 +48,53 @@ $(function(){
 		if (window.location.hash && window.location.hash.length > 7 && window.location.hash.substr(-5) == '.html'){
 			doNavigate(window.location.hash.substr(3));
 		} else {
-			$('#main_page_nav')
-				.animate({'margin-left': '0'}, SLIDE_DURATION)
-				.removeClass('expanded');
+			$('#main_page_nav').removeClass('expanded');
 		}
 	}).trigger('hashchange');
 
-	// load youtube videos: 
-
+	getWPPosts();
+	
 });
 
 
 
+// load youtube videos: 
 function loadVideos(){
 
 }
 
 function getWPPosts(){
-	$.getJSON('http://www.tamuseum.org/api/get_recent_posts/?json=1&callback=?', function(data) {
-		$("ul#news").html("");
+
+	function getInfo(){
+		try {
+			if (!('localStorage' in window && window['localStorage'] !== null)){
+				return false;
+			}
+			news = JSON.parse(localStorage.getItem('news_entries'));
+			if (news.last_done < Time.new() - (1000*60*60*10)){
+				return false;
+			} else {
+				return news.items;
+			}
+		} catch (e){
+			 return false;
+		}
+	}
+
+	var info = getInfo();
+	if (!info){
+		$.getJSON('http://www.tamuseum.org/api/get_recent_posts/?json=1&callback=?', cb);
+	} else {
+		cb(info);
+	}
+
+	function cb(data) {
+
 		var i = 0;
+		$("ul#news").html("");
 		$(data.posts).each(function() {
-			if(i > NEWS_TO_SHOW) return;
+	
+			if(i > NUM_NEWS_ITEMS) return;
 			var content = stripEmptyP(stripImg(this.content));
 			if(content.match(/\<p(.*)\<\/p\>/ig) != null) {
 				content = content.match(/\<p(.*)\<\/p\>/ig)[0];
@@ -77,7 +102,15 @@ function getWPPosts(){
 				i++;
 			}
 		});
-	});
+
+		try { 
+			if (('localStorage' in window && window['localStorage'] !== null)){
+				localStorage.setItem(JSON.stringify({'news_entries': data, last_done: Time.new()}));
+			}
+		} catch (e){
+
+		}
+	}
 }
 
 function stripImg(content) {

@@ -1,0 +1,49 @@
+<!--stories page - collection of stories (videos), testimonies, things that inspire -->
+<div id="stories" data-role="page">
+    <div class="story_page_title">Aviation Changes Lives</div>
+
+    <div class="story">
+        <div class="story_title" style="color:black; font-style:italic; font-size: 20px; text-align: center">
+            See CNN’s broadcast story
+        </div>
+        <!--embedded video-->
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/ltra5QopQMA?list=UUlhIk567JN7iUXs8EsMRB_w&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="story" style="background-image: url(assets/images/stories/impacting-lives.jpg)">
+        <div class="story_title">Impacting Lives</div>
+        <div class="story_description">
+            Through aviation enrichment and mentoring, our youth participants consistently show improved self-confidence, self-discipline, and much more.
+            <br><br>
+            <b>Too often, a student’s only exposure to STEM (science, technology, engineering, math) is through textbooks and videos shown in class.</b> Not very fun. We believe learning math and science should be hands-on and experiential.
+        </div>
+    </div>
+
+    <div class="story" style="background-image: url(assets/images/stories/capturing.jpg)">
+        <div class="story_title">Capturing Their Attention</div>
+        <div class="story_description">
+            <b>Flying has the ability to capture the attention of young minds</b> like no other activity.
+            <br><br>
+            In South Los Angeles, Tomorrow’s Aeronautical Museum is the only organization of its kind providing our community access to this amazing world.
+            <br><br>
+            <a class="story_link" href="http://www.tamuseum.org/what-we-do/success-stories/">See our youth stories.</a>
+        </div>
+    </div>
+
+    <div class="story" style="background-image: url(assets/images/stories/future.jpg)">
+        <div class="story_title">To The Future</div>
+        <div class="story_description">
+            We are already seeing a burgeoning commercial space industry with Hawthorne-based SpaceX leading the way.
+            <br><br>
+            A background in aeronautics provides a viable pathway into the world of aerospace - <a class="story_link" href="http://www.tamuseum.org/why-aviation/">and more.</a>
+        </div>
+    </div>
+
+    <div class="story" style="background-image: url(assets/images/stories/community.jpg)">
+        <div class="story_title">Improving the Community</div>
+        <div class="story_description">
+            Aviation is a powerful motivator to help a youth get through high school and into college.
+            <b>Aviation betters the community by bettering our youth.</b>
+        </div>
+    </div>
+</div>
