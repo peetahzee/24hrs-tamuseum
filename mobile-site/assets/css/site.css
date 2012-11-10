@@ -192,6 +192,8 @@ ul#main_nav li .ui-icon {
 }
 
 .about_title { /* can't override jq mobile! */
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-weight: bold;
 	font-size: 20px;
 	height: 400px;

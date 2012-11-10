@@ -4,7 +4,7 @@
         <img src="./assets/images/logo.png" alt="Tommorow's Aeronautical Museum Logo" id="logo" />
         
         <h1>Making Tomorrow's History Today</h1>
-        <p>Lorem Ipsum blah blah blah blah blah.</p>
+        <p>empowering the youth to take flight</p>
     </div>
 
     <div class="full_height" id="main_page_nav">
@@ -12,8 +12,8 @@
         <div id="nav_pane">
             <ul id="main_nav" data-role="listview">
                 <li><a href="about.html">About &gt; </a></li>
-                <li><a href="donate.html">News &gt; </a></li>
-                <li><a href="volunteer.html">Volunteer &gt; </a></li>
+                <li><a href="news.html">News &gt; </a></li>
+                <li><a href="donate.html">Donate &gt; </a></li>
                 <li><a href="contact.html">Contact &gt; </a></li>
             </ul>
         </div>
