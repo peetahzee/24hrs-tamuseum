@@ -10,8 +10,8 @@
             </div>
         </li>
         <li>
+            <a href="#history" class="about_title">Our History</a>
             <div class="about_block">
-                <span class="about_title">Our History</span>
                 <img src="" class="about_image" />
                 <div class="about_description">
                     We're proud of our history as a grassroots organization. Learn how one pilot's desire to share his passion for flying with youth became a unique program designed to help them excel.
@@ -22,5 +22,9 @@
 </div>
 
 <div id="mission" data-role="page">
+    Mission content here
+</div>
+
+<div id="history" data-role="page">
     Mission content here
 </div>
