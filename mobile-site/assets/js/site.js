@@ -3,6 +3,12 @@ $('document').ready(function() {
 	$(window).resize(function() {
 		scalePanels();
 	});
+	
+	var zIndex = 1;
+	$($(".full_height").get().reverse()).each(function() {
+		$(this).css("z-index", zIndex);
+		zIndex++;
+	});
 });
 
 function scalePanels() {
