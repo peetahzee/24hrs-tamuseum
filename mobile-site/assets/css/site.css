@@ -1,1 +1,9 @@
 /* site.css */
+
+#main_page {
+	background: url(../images/front_bg.jpg) no-repeat;
+}
+
+#main_page h2 {
+	color: white;
+}
