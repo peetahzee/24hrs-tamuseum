@@ -27,7 +27,7 @@ a {
 
 html, body {
 	text-align: center !important;
-	font-family: "Helvetica Neue";
+	font-family: 'PT Sans', sans-serif;
 }
 
 
@@ -331,7 +331,7 @@ a.story_link {
 	padding: 8px 8px 8px 0;
 	border: 0;
 	color: rgba(255,255,255,0.7);
-	width: 80px;
+	width: 50%;
 	font-size: 16px;
 	display: inline-block;
 	background: rgba(255,255,255,0.3);
