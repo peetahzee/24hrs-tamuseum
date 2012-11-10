@@ -12,8 +12,8 @@
         <div id="nav_pane">
             <ul id="main_nav" data-role="listview">
                 <li><a href="about.html">About &gt; </a></li>
-                <li><a href="donate.html">Donate &gt; </a></li>
                 <li><a href="stories.html">Inspire me &gt; </a></li>
+                <li><a href="donate.html">Donate &gt; </a></li>
                 <li><a id="news" href="news.html">News ↓ </a></li>
             </ul>
         </div>
