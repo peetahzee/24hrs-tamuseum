@@ -445,3 +445,11 @@ ul.news_list li p, ul.news_list li p *{
 }
 
 /* end find page */
+
+footer {
+	border-top: 1px solid #aaa;
+	font-size: 13px;
+	margin-top: 10px;
+	padding: 5px;
+	color: #333;
+}
