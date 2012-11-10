@@ -4,7 +4,7 @@
         <a href="#main_page">
             <img src="./assets/images/logo.png" alt="Tommorow's Aeronautical Museum Logo" id="logo" />
             <h1>Making Tomorrow's History Today</h1>
-            <p>empowering the youth to take flight</p>
+            <p>inspiring with aviation</p>
         </a>
     </div>
 
@@ -41,7 +41,7 @@
         loading...
         </ul>
         
-        <h1>From Executive Director</h1>
+        <h1>Executive Director</h1>
         <ul id="exec_director" class="news_list">
         loading...
         </ul>
