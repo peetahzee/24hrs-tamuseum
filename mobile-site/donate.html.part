@@ -1,12 +1,16 @@
-<div id="donate" data-role="page">
+<div id="donate" class="full_height" data-role="page">
 	
 	<h1>Donate Today</h1>
+	
+	<p>Generous gifts from people like you are the reason we're able to keep our doors open and continue offering high quality after school enrichment to community youth and continue the legacy of aviation pioneers in South Los Angeles for generations to come.</p>
 
     <form action="#" id="donate_form">
     	<!--<label for="donation_amount">Donation Amount:</label>-->
-    	<div id="donation_amount">$<input type="number" name="amount" value="25" /></div>
-    	<!-- big number input to 
-    	<input type="submit" value="Donate" />
+    	<div id="donation_amount">
+    		$<input type="number" name="amount" value="25" />
+    		<button type="submit" id="donate_button">Donate ></button>
+    	</div>
+    	<!-- big number input too -->
     	<!-- ^ gradient css3 image button -->
     </form>
 
