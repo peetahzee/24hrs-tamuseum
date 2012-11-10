@@ -157,7 +157,6 @@ ul#main_nav li .ui-icon {
 }
 
 #nav_pane {
-	background: url(../images/test.jpg);
 	/* 
 	width: 50%;
 	margin-left:-20px; 
@@ -181,6 +180,7 @@ ul#main_nav li .ui-icon {
 
 #main_page_nav {
 	width: 200%;
+	background: url(../images/test.jpg);
 }
 
 /* end nav pane */
