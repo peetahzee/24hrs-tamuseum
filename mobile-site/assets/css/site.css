@@ -319,6 +319,7 @@ ul.news_list li p, ul.news_list li p *{
 
 #donate p {
 	text-align: left;
+	padding-left: 10px;
 	font-size: 14px;
 	width: 60%;
 	float: left;
@@ -343,7 +344,7 @@ ul.news_list li p, ul.news_list li p *{
 }
 
 #donation_amount input {
-	padding: 8px 8px 8px 0;
+	padding: 7px 8px 9px 0;
 	border: 0;
 	color: rgba(255,255,255,0.7);
 	width: 50%;
@@ -365,7 +366,7 @@ ul.news_list li p, ul.news_list li p *{
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
 	position: absolute;
 	bottom: 0;
-	padding: 29px;
+	padding: 20px 0;
 }
 
 /* end donation page */
