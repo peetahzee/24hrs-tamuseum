@@ -9,8 +9,12 @@ body {
 	text-align: right;
 }
 
+#logo_img {
+	width:95%;
+	margin:0 2px;
+}
+
 html, body {
-	background: #333;
 	text-align: center !important;
 	font-family: "Helvetica Neue";
 }
