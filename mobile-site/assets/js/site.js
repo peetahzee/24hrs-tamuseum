@@ -1,8 +1,7 @@
 $(function(){
 
 	$(window).resize(function() {
-		$(".full_height:not(.resized)").height($(window).height()*0.8);
-		$(".full_height:last:not(.resized)").height($(window).height());
+		scalePanels();
 	}).trigger('resize');
 	
 	getWPPosts();
@@ -34,8 +33,8 @@ $(function(){
 });
 
 function scalePanels() {
-	$(".full_height").height($(window).height()*0.85);
-	$(".full_height:last").height($(window).height());
+	$(".full_height").css('min-height', $(window).height()*0.85);
+	$(".full_height:last").css('min-height', $(window).height());
 }
 
 function getWPPosts() {
