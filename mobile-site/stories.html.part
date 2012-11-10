@@ -7,7 +7,7 @@
             See CNN’s broadcast story
         </div>
         <!--embedded video-->
-        <iframe width="560" height="315" src="http://www.youtube.com/embed/ltra5QopQMA?list=UUlhIk567JN7iUXs8EsMRB_w&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+        <iframe width="400" height="250" src="http://www.youtube.com/embed/ltra5QopQMA?list=UUlhIk567JN7iUXs8EsMRB_w&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="story" style="background-image: url(assets/images/stories/impacting-lives.jpg)">
