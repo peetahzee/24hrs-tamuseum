@@ -192,6 +192,7 @@ ul#main_nav li .ui-icon {
 	text-align: left;
 	background-size:100%;
 	height: 400px;
+	position: relative;
 }
 .about_title { /* can't override jq mobile! */
 	color: white;
@@ -199,15 +200,18 @@ ul#main_nav li .ui-icon {
 	font-family: 'Ubuntu Condensed', sans-serif !important;
 	font-weight: bold;
 	font-size: 40px;
-	padding: 10px;
+	padding: 20px;
+	margin: 0;
 }
 .about_description {
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
 	background: none;
 	color: white;
-	padding: 10px 10px 0 10px;
-	bottom: 30px;
-	position: relative;
+	padding: 20px;
+	background: rgba(0,0,0,0.3);
+	bottom: 0px;
+	position: absolute;
+	
 }
 .about_link {
 	display: inline-block;
