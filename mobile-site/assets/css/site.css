@@ -1,11 +1,14 @@
 /* site.css */
-
+* {
+	padding: 0;
+	margin: 0;
+}
 body {
 	background: #203345;
 }
 
 #main_page {
-	background:  no-repeat;
+	background: no-repeat;
 	text-align: right;
 }
 
@@ -39,24 +42,24 @@ html, body {
 #main_page_head h1 {
 	text-align: left;
 	color: white;
-	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 	font-family: 'Ubuntu Condensed', sans-serif !important;
-	font-size: 40px;
-	line-height: 35px;
-	margin: 0 0 6px 0;
+	font-size: 50px;
+	line-height: 40px;
+	margin: 0 0 0 -2px;
 	padding: 0;
 	text-transform: lowercase;
 	position: absolute;
-	bottom: 50px;
+	bottom: 65px;
 }
 #main_page_head p {
 	text-align: left;
-	color: white;
-	text-shadow: 2px 2px 5px rgba(0,0,0,1);
+	color: rgba(255,255,255,0.9);
+	text-shadow: 2px 2px 3px rgba(0,0,0,1);
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	bottom: 30px;
+	bottom: 40px;
 }
 
 .full_height {
@@ -76,15 +79,18 @@ ul#main_nav li {
 	border: 0;
 	text-align: right;
 	padding: 0;
+	list-style: none;
+	padding: 7px 0 !important;
+	text-decoration: none;
 }
 ul#main_nav li a{
-	padding: 5px 0 !important;
 	color: #fbfbfb;
 	text-shadow: 2px 2px 3px rgba(0,0,0,0.8);
 	text-align: right;
 	font-family: 'Ubuntu Condensed', sans-serif !important;
-	font-size: 20px;
+	font-size: 30px;
 	text-transform: lowercase;
+	text-decoration: none;
 }
 
 ul#main_nav li .ui-btn-inner {
