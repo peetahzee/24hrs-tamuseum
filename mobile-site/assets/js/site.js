@@ -73,9 +73,9 @@ function getWPPosts(){
 			var content = stripEmptyP(stripImg(this.content));
 			if(content.match(/\<p(.*)\<\/p\>/ig) != null) {
 				content = content.match(/\<p(.*)\<\/p\>/ig)[0];
+				$("ul#news").append('<a href="'+this.url+'"><li><img src="'+this.thumbnail+'" /><h3>'+this.title+'</h3><p>'+content+'</p></li></a>');
+				i++;
 			}
-			$("ul#news").append('<a href="'+this.url+'"><li><img src="'+this.thumbnail+'" /><h3>'+this.title+'</h3><p>'+content+'</p></li></a>');
-			i++;
 		});
 	});
 }
