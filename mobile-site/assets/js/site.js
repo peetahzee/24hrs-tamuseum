@@ -21,10 +21,9 @@ $(function(){
 		} else {
 			$('#content_pane').load($(this).attr('href')+' .wrapper', function(load){
 				$('#main_page_nav')
-					.animate({'margin-left': (($('#main_nav').width()+50)*-1) + 'px'}, 1000, function(){
+					.animate({'margin-left': '-100%'}, 1000, function(){
 						$(this).height($('#content_pane .wrapper').height()).addClass('resized');
 					})
-					
 			});
 		}
 
@@ -35,7 +34,11 @@ $(function(){
 
 });
 
-function getWPPosts() {
+function loadVideos(){
+
+}
+
+function getWPPosts(){
 	$.getJSON('http://www.tamuseum.org/api/get_recent_posts/?json=1&callback=?', function(data) {
 		var i = 0;
 		$(data.posts).each(function() {
