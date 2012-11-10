@@ -302,15 +302,16 @@ ul#main_nav li .ui-icon {
 }
 
 #donation_amount {
-	text-align:center;
-	font-size:40px;
+	font-size: 20px;
+	text-align: center;
 }
 
 #donation_amount input {
-	padding:18px;
+	padding: 8px;
 	width: 80px;
-	font-size:20px;
+	font-size: 16px;
 	display: inline-block;
+	margin-left: 5px;
 }
 
 #donate_button {

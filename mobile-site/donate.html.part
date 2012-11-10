@@ -8,7 +8,7 @@
     	<!--<label for="donation_amount">Donation Amount:</label>-->
     	<div id="donation_amount">
     		$<input type="number" name="amount" value="25" />
-    		<button type="submit" id="donate_button">Donate</button>
+    		<button type="submit" id="donate_button">Donate ></button>
     	</div>
     	<!-- big number input too -->
     	<!-- ^ gradient css3 image button -->

@@ -57,7 +57,9 @@ function loadVideos(){
 function getWPPosts(){
 	$.getJSON('http://www.tamuseum.org/api/get_recent_posts/?json=1&callback=?', function(data) {
 		var i = 0;
+		$("ul#news").html("");
 		$(data.posts).each(function() {
+	
 			if(i > 5) return;
 			var content = stripEmptyP(stripImg(this.content));
 			if(content.match(/\<p(.*)\<\/p\>/ig) != null) {
