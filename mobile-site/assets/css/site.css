@@ -105,7 +105,8 @@ ul#main_nav li .ui-icon {
 	/*height: 200px;*/
 	text-align: left;
 	font-family: "Helvetica Neue";
-	
+	border-top: 5px solid gray;
+	border-bottom: 5px solid gray;
 }
 
 .about_title { /* can't override jq mobile! */
@@ -119,6 +120,11 @@ ul#main_nav li .ui-icon {
 	background: black;
 	color: white;
 	padding: 10px;
-
+}
+.about_link {
+	display: inline-block;
+	color: white;
+	text-decoration: underline;
+	font-style: italic;
 }
 /* end about stuff */
