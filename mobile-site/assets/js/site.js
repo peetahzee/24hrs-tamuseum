@@ -1,7 +1,8 @@
 $(function(){
 
 	$(window).resize(function() {
-		scalePanels();
+		$(".full_height").css('height', $(window).height()*0.85);
+		$(".full_height:last").css('min-height', $(window).height());
 	}).trigger('resize');
 	
 	getWPPosts();
@@ -31,11 +32,6 @@ $(function(){
 	// load youtube video: 
 
 });
-
-function scalePanels() {
-	$(".full_height").css('min-height', $(window).height()*0.85);
-	$(".full_height:last").css('min-height', $(window).height());
-}
 
 function getWPPosts() {
 	$.getJSON('http://www.tamuseum.org/api/get_recent_posts/?json=1&callback=?', function(data) {
