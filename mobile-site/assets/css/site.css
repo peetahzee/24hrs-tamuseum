@@ -93,8 +93,7 @@ html, body {
 }
 
 ul#main_nav {
-	padding-top: 20px;
-	padding-right: 50px;
+	padding-right: 40px;
 }
 ul#main_nav li {
 	background: 0;
@@ -179,8 +178,7 @@ ul#main_nav li .ui-icon {
 
 #nav_pane #desc {
 	font-family: 17px;
-	padding: 30px;
-	background: rgba(0,0,0,0.3);
+	padding: 40px 40px 25px 40px;
 	color: rgba(255,255,255,0.8);
 	text-align: right;
 	text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
@@ -271,6 +269,9 @@ ul#main_nav li .ui-icon {
 	background-size:100%;
 	height: 400px;
 	position: relative;
+}
+.story.video {
+	height: 315px !important;
 }
 .story_title {
 	color: white;
