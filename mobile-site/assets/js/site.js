@@ -14,7 +14,12 @@ $(function(){
 	$('#main_nav a').click(function(evt){
 		evt.preventDefault();
 
-		$('#content_pane').load($(this).attr('href')+'#wrapper')
+		$('#content_pane').load($(this).attr('href')+' .wrapper', function(load){
+			$('#main_page_nav')
+				.animate({'margin-left': (($('#main_nav').width()+50)*-1) + 'px'})
+				.css('height', $('#content_pane .wrapper').height()+'px');
+
+		});
 
 		return false;
 	});
