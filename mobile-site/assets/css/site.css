@@ -10,8 +10,7 @@ body {
 }
 
 #logo_img {
-	width:95%;
-	margin:0 2px;
+	max-height:120px;
 }
 
 html, body {
@@ -29,6 +28,7 @@ html, body {
 #main_page_head {
 	background: url(../images/front-spread.jpg) no-repeat;
 	padding: 10px 29px;
+	background-size: 100%;
 	text-align: center;
 }
 #main_page_nav {
