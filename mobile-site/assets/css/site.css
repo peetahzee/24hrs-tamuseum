@@ -1,9 +1,71 @@
 /* site.css */
 
-#main_page {
-	background: url(../images/front_bg.jpg) no-repeat;
+body {
+	background: #203345;
 }
 
-#main_page h2 {
-	color: white;
+#main_page {
+	background:  no-repeat;
+	text-align: right;
+}
+
+#logo_img {
+	width:95%;
+	margin:0 2px;
+}
+
+html, body {
+	text-align: center !important;
+	font-family: "Helvetica Neue";
+}
+
+#wrapper {
+	width: 500px;
+}
+
+#main_page {
+	text-align: right;
+	width: 384px;
+}
+
+#main_page_head {
+	background: url(../images/front_bg.jpg) no-repeat;
+	padding: 10px 29px;
+}
+#main_page_nav {
+	padding: 10px 29px;
+}
+
+#logo {
+	background: url("../images/logo.png");
+	width: 330px;
+	height: 101px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+ul#main_nav {
+	padding-top: 20px;
+}
+ul#main_nav li {
+	background: 0;
+	border: 0;
+	text-align: right;
+	padding: 0;
+}
+ul#main_nav li a{
+	padding: 5px 0 !important;
+	color: #fbfbfb;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.8);
+	text-align: right;
+	font-family: 'Ubuntu Condensed', sans-serif !important;
+	font-size: 20px;
+	text-transform: lowercase;
+}
+
+ul#main_nav li .ui-btn-inner {
+	border: 0;
+}
+ul#main_nav li .ui-icon {
+	display: none;
 }
