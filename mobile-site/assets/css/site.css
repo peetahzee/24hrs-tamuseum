@@ -3,6 +3,10 @@
 	padding: 0;
 	margin: 0;
 }
+
+.clear {
+	clear:both;
+}
 body {
 	background: #203345;
 }
@@ -108,15 +112,16 @@ ul#main_nav li .ui-icon {
 	width: 50%;
 	height: 100%;
 	position:relative;
-	float:left;
-
+	vertical-align: top;
+	display: inline-block;
 }
 
 #content_pane {
-	width: 50%;
-	position:relative;
-	float:left;
+	width: 49%;
+	display: inline-block;
 	height:100%;
+	vertical-align: top;
+	position: relative;
 }
 
 #main_page_nav {
@@ -130,10 +135,12 @@ ul#main_nav li .ui-icon {
 /* about stuff */
 .about_block {
 	/*height: 200px;*/
+	background-image: no-repeat;
 	text-align: left;
 	font-family: "Helvetica Neue";
 	border-top: 5px solid gray;
 	border-bottom: 5px solid gray;
+	background-size:100%;
 }
 
 .about_title { /* can't override jq mobile! */
