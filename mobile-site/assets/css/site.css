@@ -27,6 +27,10 @@ a {
 	max-height:120px;
 }
 
+.hidden {
+	display:none;
+}
+
 html, body {
 	text-align: center !important;
 	font-family: 'PT Sans', sans-serif;
