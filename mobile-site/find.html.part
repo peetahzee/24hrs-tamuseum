@@ -1,6 +1,6 @@
 <!--find us page-->
 <div id="find" data-role="page" class="full_height">
-    <div class="find_block" style="background-image: url(assets/images/about/findus.jpg)">
+    <div class="find_block">
         <h1>Find Us</h1>
         <div class="find_description">
             <p>We're open from 8am to 8pm, 7 days a week. Come find us at <a href="http://goo.gl/maps/G4LRR">961 West Alondra Boulevard, Compton, CA</a>!</p>
