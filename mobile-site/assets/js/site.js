@@ -1,6 +1,6 @@
 
 // Mobile App Settings
-var WINDOW_HEIGHT_PERCENT = 0.85
+var WINDOW_HEIGHT_PERCENT = 0.95
   , NEWS_SCROLL_SPEED     = 500
   , NUM_NEWS_ITEMS        = 2;
 
@@ -95,7 +95,15 @@ function getWPPosts(){
 			var content = stripEmptyP(stripImg(this.content));
 			if(content.match(/\<p(.*)\<\/p\>/ig) != null) {
 				content = content.match(/\<p(.*)\<\/p\>/ig)[0];
-				$("ul#news").append('<a href="'+this.url+'"><li><img src="'+this.thumbnail+'" /><h3>'+this.title+'</h3><p>'+content+'</p></li></a>');
+				var t = '';
+				// check if youtube
+				var youtubeID = content.match(/\/embed\/([0-9a-zA-Z]+)/i);
+				if(youtubeID != null) {
+					youtubeID = youtubeID[1];
+					content = '<img class="youtube_image" src="http://img.youtube.com/vi/'+youtubeID+'/2.jpg" />';
+				} 
+				if(this.thumbnail != null && this.thumbnail != undefined) { t = '<img src="'+this.thumbnail+'" />'; }
+				$("ul#news").append('<a href="'+this.url+'"><li>'+t+'<h3>'+this.title+'</h3><p>'+content+'</p></li></a>');
 				i++;
 			}
 		});
