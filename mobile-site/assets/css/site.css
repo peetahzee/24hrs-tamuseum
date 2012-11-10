@@ -158,9 +158,14 @@ ul#main_nav li .ui-icon {
 
 #nav_pane {
 	background: url(../images/test.jpg);
+	/* 
+	width: 50%;
+	margin-left:-20px; 
+	*/
+	margin-left:-10px;
 	width: 50%;
 	height: 100%;
-	margin-left:-20px;
+	
 	position:relative;
 	vertical-align: top;
 	display: inline-block;
@@ -175,7 +180,7 @@ ul#main_nav li .ui-icon {
 }
 
 #main_page_nav {
-	width: 201%;
+	width: 200%;
 }
 
 
