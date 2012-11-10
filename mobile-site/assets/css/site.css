@@ -14,6 +14,8 @@ body {
 a {
 	text-decoration: none;
 	color: inherit;
+	opacity: .8;
+	font-style: italic;
 }
 
 #main_page {
@@ -23,6 +25,10 @@ a {
 
 #logo_img {
 	max-height:120px;
+}
+
+.hidden {
+	display:none;
 }
 
 html, body {
@@ -55,6 +61,7 @@ html, body {
 	text-transform: lowercase;
 	position: absolute;
 	bottom: 65px;
+	font-style: normal;
 }
 #main_page_head p {
 	text-align: left;
@@ -64,16 +71,15 @@ html, body {
 	padding: 0;
 	position: absolute;
 	bottom: 40px;
-}
-
-#main_page_nav {
-	/*padding: 10px 29px;
-	background: url("../images/test.jpg");*/
+	font-style: normal;
 }
 
 #main_page_news {
 	padding: 20px 29px 10px;
 	background: url("../images/news_bg.png");
+}
+#main_page_news * {
+	font-style: normal;
 }
 
 #main_page_news h1 {
@@ -102,7 +108,7 @@ ul#main_nav li {
 	padding: 0;
 	list-style: none;
 	padding: 7px 0 !important;
-	text-decoration: none;
+	text-decoration: none; 
 }
 ul#main_nav li a{
 	color: #fbfbfb;
@@ -112,9 +118,10 @@ ul#main_nav li a{
 	font-size: 30px;
 	text-transform: lowercase;
 	text-decoration: none;
+	font-style: normal;
 }
 
-ul#news li {
+ul.news_list li {
 	padding: 8px;
 	border: 1px solid #ccc;
 	background: rgba(0,0,0,0.15);
@@ -125,14 +132,19 @@ ul#news li {
 	min-height: 75px;
 }
 
-ul#news li img {
+ul.news_list li img {
 	float: right;
 	width: 75px;
 	height: auto;
 	margin-left: 5px;
 }
+ul.news_list li img.youtube_image {
+	width: 50%;
+	margin-top: 5px;
+	float: none;
+}
 
-ul#news li h3 {
+ul.news_list li h3 {
 	font-family: 'Ubuntu Condensed', sans-serif !important;
 	color: white;	
 	text-align: left;
@@ -142,19 +154,11 @@ ul#news li h3 {
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 
-ul#news li p, ul#news li p *{
+ul.news_list li p, ul.news_list li p *{
 	color: #555 !important;
 	font-size: 14px;
 	text-align: left;
 }
-
-ul#main_nav li .ui-btn-inner {
-	border: 0;
-}
-ul#main_nav li .ui-icon {
-	display: none;
-}
-
 
 /* navigation pane */
 
@@ -250,8 +254,6 @@ ul#main_nav li .ui-icon {
 .about_link {
 	display: inline-block;
 	color: white;
-	text-decoration: underline;
-	font-style: italic;
 }
 /* end about stuff */
 
@@ -290,10 +292,6 @@ ul#main_nav li .ui-icon {
 	background: rgba(0,0,0,0.3);
 	bottom: 0px;
 	position: absolute;
-}
-a.story_link {
-	color: #3BB9FF; /* deep sky blue */
-	opacity: .8;
 }
 /* end stories */
 
@@ -411,3 +409,47 @@ a.story_link {
 }
 
 /* end volunteer page */
+
+/* start find page */
+
+#find h1 {
+	padding: 25px;
+	font-size: 54px;
+	text-align: center;
+	line-height: 40px;
+	font-family: 'Ubuntu Condensed', sans-serif !important;
+}
+
+#find {
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	color:#fff;
+	position: relative;
+	height: 100%;
+}
+
+#find p {
+	text-align: left;
+	font-size: 14px;
+	width: 100%;
+	margin-bottom: 8px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.find_description {
+	background: rgba(0,0,0,0.3);
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+	padding: 29px;
+	position: absolute;
+	bottom: 0;
+}
+
+/* end find page */
+
+footer {
+	border-top: 1px solid #aaa;
+	font-size: 13px;
+	margin-top: 10px;
+	padding: 5px;
+	color: #333;
+}

@@ -1,10 +1,11 @@
 <div id="main_page" data-role="page">
 
     <div id="main_page_head" class="full_height">
-        <img src="./assets/images/logo.png" alt="Tommorow's Aeronautical Museum Logo" id="logo" />
-        
-        <h1>Making Tomorrow's History Today</h1>
-        <p>empowering the youth to take flight</p>
+        <a href="#main_page">
+            <img src="./assets/images/logo.png" alt="Tommorow's Aeronautical Museum Logo" id="logo" />
+            <h1>Making Tomorrow's History Today</h1>
+            <p>empowering the youth to take flight</p>
+        </a>
     </div>
 
     <div class="full_height" id="main_page_nav">
@@ -18,7 +19,7 @@
                 <li><a href="stories.html">Inspire me &gt; </a></li>
                 <li><a href="donate.html">Donate &gt; </a></li>
 				<li><a href="volunteer.html">Volunteer &gt; </a></li>
-                <li><a id="news" href="news.html">News ↓ </a></li>
+				<li><a href="find.html">Find Us &gt; </a></li>
             </ul>
             
         </div>
@@ -31,11 +32,21 @@
     
     <div id="main_page_news" class="full_height">
         <h1>Updates</h1>
-        <ul id="news">
+        <ul id="news" class="news_list">
         loading...
         </ul>
         
-        </div>
+        <h1>Aviation</h1>
+        <ul id="aviation" class="news_list">
+        loading...
+        </ul>
+        
+        <h1>From Executive Director</h1>
+        <ul id="exec_director" class="news_list">
+        loading...
+        </ul>
+        
+        <footer><a href="http://tamuseum.org?nomobi=1">Full Site</a></footer>
     </div>
 
 </div>
