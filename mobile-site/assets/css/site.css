@@ -313,10 +313,12 @@ a.story_link {
 
 #donation_amount {
 	font-size: 16px;
-	text-align: center;
+	text-align: left;
 	width: 40%;
 	float: right;
 	box-sizing: border-box;
+	padding-left: 15px;
+	padding-top: 5px;
 }
 
 #donation_amount span {
@@ -337,10 +339,10 @@ a.story_link {
 }
 
 #donate_button {
-	display: inline-block;
-	padding: 10px;
+	display: block;
+	padding: 8px;
 	margin-top: 10px;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 #donation_wrapper {

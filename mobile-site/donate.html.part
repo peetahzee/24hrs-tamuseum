@@ -7,7 +7,7 @@
 
     <form action="#" id="donate_form">
     	<div id="donation_amount">
-    		<span>$</span><input type="number" name="amount" value="25" />
+    		<span>$</span><input type="number" name="amount" value="25" /><br />
     		<button type="submit" id="donate_button">Donate ></button>
     	</div>
     </form>
