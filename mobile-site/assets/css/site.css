@@ -265,6 +265,10 @@ ul#main_nav li .ui-icon {
 	/*bottom: 0px;*/
 	/*position: absolute;*/
 }
+a.story_link {
+	color: #3BB9FF; /* deep sky blue */
+	opacity: .8;
+}
 /* end stories */
 
 /* donation page */
