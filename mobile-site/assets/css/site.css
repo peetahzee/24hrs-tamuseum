@@ -29,6 +29,7 @@ html, body {
 #main_page_head {
 	background: url(../images/front_bg.jpg) no-repeat;
 	padding: 10px 29px;
+	text-align: center;
 }
 #main_page_nav {
 	padding: 10px 29px;
