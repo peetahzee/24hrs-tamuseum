@@ -40,7 +40,7 @@ function getWPPosts() {
 			if(i > 5) return;
 			var content = stripEmptyP(stripImg(this.content));
 			content = content.match(/\<p(.*)\<\/p\>/ig)[0];
-			$("ul#news").append('<li><img src="'+this.thumbnail+'" /><h3>'+this.title+'</h3><p>'+content+'</p></li>');
+			$("ul#news").append('<a href="'+this.url+'"><li><img src="'+this.thumbnail+'" /><h3>'+this.title+'</h3><p>'+content+'</p></li></a>');
 			
 			i++;
 		});
