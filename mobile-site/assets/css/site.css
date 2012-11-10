@@ -1,7 +1,7 @@
 /* site.css */
 
 body {
-	background: url(../images/front_bg.jpg) #203345;
+	background: #203345;
 }
 
 #main_page {
@@ -30,7 +30,10 @@ html, body {
 
 #main_page_head {
 	background: url(../images/front_bg.jpg) no-repeat;
-	padding: 29px;
+	padding: 10px 29px;
+}
+#main_page_nav {
+	padding: 10px 29px;
 }
 
 #logo {
@@ -38,11 +41,11 @@ html, body {
 	width: 330px;
 	height: 101px;
 	padding: 0;
-	margin: 10px auto;
+	margin: 0 auto;
 }
 
 ul#main_nav {
-	margin-top: 10px;
+	padding-top: 20px;
 }
 ul#main_nav li {
 	background: 0;
