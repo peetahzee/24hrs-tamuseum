@@ -1,7 +1,11 @@
 /* site.css */
 
+body {
+	background: url(../images/front_bg.jpg) #203345;
+}
+
 #main_page {
-	background: url(../images/front_bg.jpg) no-repeat;
+	background:  no-repeat;
 }
 
 #main_page h2 {
