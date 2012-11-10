@@ -109,7 +109,6 @@ ul#main_nav li {
 	list-style: none;
 	padding: 7px 0 !important;
 	text-decoration: none;
-	font-style: normal;
 }
 ul#main_nav li a{
 	color: #fbfbfb;
@@ -119,6 +118,7 @@ ul#main_nav li a{
 	font-size: 30px;
 	text-transform: lowercase;
 	text-decoration: none;
+	font-style: normal;
 }
 
 ul#news li {
