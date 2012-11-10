@@ -35,10 +35,6 @@ html, body {
 	text-align: center;
 	position: relative;
 }
-#main_page_nav {
-	padding: 10px 29px;
-}
-
 #main_page_head h1 {
 	text-align: left;
 	color: white;
@@ -62,8 +58,25 @@ html, body {
 	bottom: 40px;
 }
 
+#main_page_nav {
+	padding: 10px 29px;
+	background: url("../images/test.jpg");
+}
+
+#main_page_news {
+	padding: 20px 29px 10px;
+	background: url("../images/news_bg.png"
+	);
+}
+
+#main_page_news h1 {
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+	font-family: 'Ubuntu Condensed', sans-serif !important;
+}
+
 .full_height {
-	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8)
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+	box-sizing: border-box;
 }
 #logo {
 	width: 90%;
@@ -91,6 +104,37 @@ ul#main_nav li a{
 	font-size: 30px;
 	text-transform: lowercase;
 	text-decoration: none;
+}
+
+ul#news li {
+	padding: 8px;
+	border: 1px solid #ccc;
+	background: rgba(0,0,0,0.15);
+	border-radius: 3px;
+	margin-bottom: 3px;	
+	list-style: none;
+	clear: both;
+}
+
+ul#news li img {
+	float: right;
+	width: 75px;
+	height: auto;
+}
+
+ul#news li h3 {
+	font-family: 'Ubuntu Condensed', sans-serif !important;
+	color: white;	
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+ul#news li p, ul#news li p *{
+	color: #555 !important;
+	font-size: 12px;
+	text-align: left;
 }
 
 ul#main_nav li .ui-btn-inner {
