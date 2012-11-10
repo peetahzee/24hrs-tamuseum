@@ -1,9 +1,16 @@
+
+// Mobile App Settings
+var WINDOW_HEIGHT_PERCENT = 0.85
+  , NEWS_SCROLL_SPEED     = 500
+  , NUM_NEWS_ITEMS        = 2;
+
+
 $(function(){
 
 	$(window).resize(function() {
-		$(".full_height").css('min-height', $(window).height()*0.85);
+		$(".full_height").css('min-height', $(window).height()*WINDOW_HEIGHT_PERCENT);
 		$(".full_height:last").css('min-height', $(window).height());
-		$('#main_page_nav:not(.expanded)').css('height', $(window).height()*0.85);
+		$('#main_page_nav:not(.expanded)').css('height', $(window).height()*WINDOW_HEIGHT_PERCENT);
 	}).trigger('resize');
 	
 	var zIndex = 1;
@@ -42,6 +49,7 @@ $(function(){
 			doNavigate(window.location.hash.substr(3));
 		} else {
 			$('#main_page_nav').removeClass('expanded');
+			$(window).resize();
 		}
 	}).trigger('hashchange');
 
@@ -49,18 +57,45 @@ $(function(){
 	
 });
 
+
+
 // load youtube videos: 
 function loadVideos(){
 
 }
 
 function getWPPosts(){
-	$.getJSON('http://www.tamuseum.org/api/get_recent_posts/?json=1&callback=?', function(data) {
+
+	function getInfo(){
+		try {
+			if (!('localStorage' in window && window['localStorage'] !== null)){
+				return false;
+			}
+			news = JSON.parse(localStorage.getItem('news_entries'));
+			if (news.last_done < Time.new() - (1000*60*60*10)){
+				return false;
+			} else {
+				return news.items;
+			}
+		} catch (e){
+			 return false;
+		}
+	}
+
+	var info = getInfo();
+	if (!info){
+		$.getJSON('http://www.tamuseum.org/api/get_recent_posts/?json=1&callback=?', cb);
+	} else {
+		cb(info);
+	}
+
+	function cb(data) {
+
 		var i = 0;
 		$("ul#news").html("");
 		$(data.posts).each(function() {
 	
-			if(i > 5) return;
+			if(i > NUM_NEWS_ITEMS) return;
 			var content = stripEmptyP(stripImg(this.content));
 			if(content.match(/\<p(.*)\<\/p\>/ig) != null) {
 				content = content.match(/\<p(.*)\<\/p\>/ig)[0];
@@ -68,7 +103,15 @@ function getWPPosts(){
 				i++;
 			}
 		});
-	});
+
+		try { 
+			if (('localStorage' in window && window['localStorage'] !== null)){
+				localStorage.setItem(JSON.stringify({'news_entries': data, last_done: Time.new()}));
+			}
+		} catch (e){
+
+		}
+	}
 }
 
 function stripImg(content) {

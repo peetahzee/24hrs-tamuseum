@@ -2,16 +2,15 @@
 	
 	<h1>Donate Today</h1>
 	
-	<p>Generous gifts from people like you are the reason we're able to keep our doors open and continue offering high quality after school enrichment to community youth and continue the legacy of aviation pioneers in South Los Angeles for generations to come.</p>
+	<div id="donation_wrapper">
+	<p>Your donation enables us to buy snacks, drinks, supplies, and equipment for our after-school programs, do more outreach, and serve more youth in the community. </p>
 
     <form action="#" id="donate_form">
-    	<!--<label for="donation_amount">Donation Amount:</label>-->
     	<div id="donation_amount">
-    		$<input type="number" name="amount" value="25" />
+    		<span>$</span><input type="number" name="amount" value="25" /><br />
     		<button type="submit" id="donate_button">Donate ></button>
     	</div>
-    	<!-- big number input too -->
-    	<!-- ^ gradient css3 image button -->
     </form>
+    </div>
 
 </div>
