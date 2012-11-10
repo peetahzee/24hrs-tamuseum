@@ -42,7 +42,8 @@ $(function(){
 		} else {
 			$('#main_page_nav')
 				//.animate({'margin-left': '0'}, 1000)
-				.removeClass('expanded');
+				.removeClass('expanded')
+				.height($(window).height()*0.8);
 		}
 	}).trigger('hashchange');
 

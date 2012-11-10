@@ -233,3 +233,26 @@ ul#main_nav li .ui-icon {
 	font-style: italic;
 }
 /* end about stuff */
+
+/* donation page */
+
+#donate {
+	background-image: url(../images/about/donate.jpg);
+	height:550px;
+	background-size:100%;
+}
+
+#donate h1 {
+	padding: 85px;
+	font-size: 54px;
+	text-align: center;
+	line-height: 40px;
+}
+
+#donate {
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	font-family: 'Ubuntu Condensed', sans-serif !important;
+	color:#fff;
+}
+
+/* end donation page */
