@@ -49,6 +49,7 @@ $(function(){
 			doNavigate(window.location.hash.substr(3));
 		} else {
 			$('#main_page_nav').removeClass('expanded');
+			$(window).resize();
 		}
 	}).trigger('hashchange');
 
