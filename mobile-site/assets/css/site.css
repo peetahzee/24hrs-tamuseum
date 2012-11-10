@@ -35,9 +35,7 @@ html, body {
 }
 
 #logo {
-	background: url("../images/logo.png");
-	width: 330px;
-	height: 101px;
+	width: 90%;
 	padding: 0;
 	margin: 0 auto;
 }

@@ -17,7 +17,7 @@
 <div id="main_page" data-role="page">
 
     <div id="main_page_head" class="full_height">
-        <div id="logo"></div>
+        <img src="./assets/images/logo.png" alt="Tommorow's Aeronautical Museum Logo" id="logo" />
     </div>
 
 

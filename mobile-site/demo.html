@@ -14,10 +14,22 @@
 </head>
 <body>
 
+<div>
+<iframe src="/" id="ifr" width="320" height="480"></iframe>
+</div>
+
+<script>
+if (window.location.hash=='#refresh'){
+	setTimeout(function(){
+		document.getElementById('ifr').src = '/';
+	},5000);
+}
+</script>
+
+<div>
 <a href="setSize()">iPhone</a>
 <a href="setSize(320,480)">?</a>
-
-<iframe src="/" width="320" height="480"></iframe>
+</div>
 
 </body>
 </html>
