@@ -43,6 +43,7 @@ $(function(){
 			$('#main_page_nav')
 				//.animate({'margin-left': '0'}, 1000)
 				.removeClass('expanded');
+			$(window).resize();
 		}
 	}).trigger('hashchange');
 
