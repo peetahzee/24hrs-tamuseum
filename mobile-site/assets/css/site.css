@@ -278,8 +278,8 @@ ul#main_nav li .ui-icon {
 
 #donate {
 	background-image: url(../images/about/donate.jpg);
-	height:550px;
 	background-size:100%;
+	padding: 0 10px;
 }
 
 #donate h1 {
@@ -287,12 +287,18 @@ ul#main_nav li .ui-icon {
 	font-size: 54px;
 	text-align: center;
 	line-height: 40px;
+	font-family: 'Ubuntu Condensed', sans-serif !important;
 }
 
 #donate {
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-	font-family: 'Ubuntu Condensed', sans-serif !important;
 	color:#fff;
+}
+
+#donate p {
+	padding: 29px;
+	text-align: left;
+	font-size: 12px;
 }
 
 #donation_amount {
@@ -304,11 +310,12 @@ ul#main_nav li .ui-icon {
 	padding:18px;
 	width: 80px;
 	font-size:20px;
+	display: inline-block;
 }
 
 #donate_button {
 	margin: 0 auto;
-	display: block;
+	display: inline-block;
 	padding: 10px;
 	margin-top: 10px;
 	font-size: 16px;

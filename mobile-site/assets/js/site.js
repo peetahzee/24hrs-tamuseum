@@ -30,6 +30,7 @@ $(function(){
 						.height($('#content_pane .wrapper').height())
 						.addClass('expanded');
 				//});
+			$(window).resize();
 		});
 	}
 
@@ -40,10 +41,7 @@ $(function(){
 		if (window.location.hash && window.location.hash.length > 7 && window.location.hash.substr(-5) == '.html'){
 			doNavigate(window.location.hash.substr(3));
 		} else {
-			$('#main_page_nav')
-				//.animate({'margin-left': '0'}, 1000)
-				.removeClass('expanded');
-			$(window).resize();
+			$('#main_page_nav').removeClass('expanded');
 		}
 	}).trigger('hashchange');
 
