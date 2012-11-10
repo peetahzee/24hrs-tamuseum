@@ -1,13 +1,10 @@
-
+<!--
 <img id="logo_img" src="./assets/images/logo.png" />
 
 <!--
 <a href="more-info.html">
     <img src="./assets/images/action-banner.png" />
 </a>
--->
-
-
 <div class="full_height">
 	<ul id="main_nav" data-role="listview">
         <li><a href="acura.html">About &gt; </a></li>
@@ -15,11 +12,10 @@
         <li><a href="bmw.html">Contact &gt; </a></li>
     </ul>
 </div>
-
-
+-->
 
 <div id="main_page" data-role="page">
-    
+
     <div id="main_page_head" class="full_height">
         <div id="logo"></div>
     </div>
