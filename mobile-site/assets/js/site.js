@@ -2,7 +2,7 @@
 // Mobile App Settings
 var WINDOW_HEIGHT_PERCENT = 0.85
   , NEWS_SCROLL_SPEED     = 500
-  , NUM_NEWS_ITEMS        = 5;
+  , NUM_NEWS_ITEMS        = 2;
 
 
 $(function(){
