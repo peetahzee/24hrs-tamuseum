@@ -1,7 +1,20 @@
 /* site.css */
 
+body {
+	background: url(../images/front_bg.jpg) #203345;
+}
+
+#main_page {
+	background:  no-repeat;
+	text-align: right;
+}
+
+#logo_img {
+	width:95%;
+	margin:0 2px;
+}
+
 html, body {
-	background: #333;
 	text-align: center !important;
 	font-family: "Helvetica Neue";
 }
