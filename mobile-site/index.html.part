@@ -18,6 +18,9 @@
 
     <div id="main_page_head" class="full_height">
         <img src="./assets/images/logo.png" alt="Tommorow's Aeronautical Museum Logo" id="logo" />
+        
+        <h1>Making Tomorrow's History Today</h1>
+        <p>Lorem Ipsum blah blah blah blah blah.</p>
     </div>
 
 
