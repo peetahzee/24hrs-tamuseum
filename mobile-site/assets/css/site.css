@@ -72,7 +72,8 @@ html, body {
 }
 
 #main_page_news h1 {
-	text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+	margin-bottom: 5px;
 	font-family: 'Ubuntu Condensed', sans-serif !important;
 }
 
@@ -132,6 +133,7 @@ ul#news li h3 {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 
 ul#news li p, ul#news li p *{
