@@ -159,13 +159,14 @@ ul#main_nav li .ui-icon {
 	background: url(../images/navbkg.jpg);
 	width: 50%;
 	height: 100%;
+	margin-left:-20px;
 	position:relative;
 	vertical-align: top;
 	display: inline-block;
 }
 
 #content_pane {
-	width: 49%;
+	width: 50%;
 	display: inline-block;
 	height:100%;
 	vertical-align: top;
@@ -173,7 +174,7 @@ ul#main_nav li .ui-icon {
 }
 
 #main_page_nav {
-	width: 200%;
+	width: 201%;
 }
 
 

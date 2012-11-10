@@ -1,8 +1,8 @@
 $(function(){
-
+var resized = false;
 	$(window).resize(function() {
-		$(".full_height").height($(window).height()*0.8);
-		$(".full_height:last").height($(window).height());
+		$(".full_height:not(.resized)").height($(window).height()*0.8);
+		$(".full_height:last:not(.resized)").height($(window).height());
 	}).trigger('resize');
 	
 	getWPPosts();
@@ -19,8 +19,7 @@ $(function(){
 		$('#content_pane').load($(this).attr('href')+' .wrapper', function(load){
 			$('#main_page_nav')
 				.animate({'margin-left': (($('#main_nav').width()+50)*-1) + 'px'})
-				.height(2000);
-
+				.height($('#content_pane .wrapper').height()).addClass('resized');
 		});
 
 		return false;
