@@ -91,13 +91,11 @@ function getWPPosts(){
 
 	function cb(data) {
 
-		var i = 0;
-		$("ul#news").html("");
-		$(data.posts).each(function() {
-			if(i > NUM_NEWS_ITEMS || checkCategory(this.categories, 21) || checkCategory(this.categories, 22)) {
-				console.log(this);
-				return;
-			}
+		$("ul.news_list").html("");
+
+		$(data.posts).each(function(el, i) {
+			console.log(['num', el, i]);
+
 			var content = stripEmptyP(stripImg(this.content));
 			if(content.match(/\<p(.*)\<\/p\>/ig) != null) {
 				content = content.match(/\<p(.*)\<\/p\>/ig)[0];
@@ -106,12 +104,26 @@ function getWPPosts(){
 				var youtubeID = content.match(/\/embed\/([0-9a-zA-Z]+)/i);
 				if(youtubeID != null) {
 					youtubeID = youtubeID[1];
+					this.url = 'http://www.youtube.com/watch?v=' + youtubeID;
 					content = '<img class="youtube_image" src="http://img.youtube.com/vi/'+youtubeID+'/2.jpg" />';
 				} 
 				var t = '';
+
 				if(this.thumbnail != null && this.thumbnail != undefined) { t = '<img src="'+this.thumbnail+'" />'; }
-				$("ul#news").append('<a href="'+this.url+'"><li>'+t+'<h3>'+this.title+'</h3><p>'+content+'</p></li></a>');
-				i++;
+
+				$toadd = $('ul#news');
+				if (checkCategory(this.categories, 21)){
+					$toadd = $('ul#aviation')
+					if ($toadd.find('li').length >= 2){ return; }
+				} else if (checkCategory(this.categories, 22)){
+					$toadd = $('ul#exec_director');
+					if ($toadd.find('li').length >= 1){ return; }
+				} else {
+					if ($toadd.find('li').length >= 3){ return; }
+				}
+
+				$toadd.append('<a href="'+this.url+'"><li>'+t+'<h3>'+this.title+'</h3><p>'+content+'</p></li></a>');
+
 			}
 		});
 
