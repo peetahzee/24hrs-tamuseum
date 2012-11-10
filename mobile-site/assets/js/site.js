@@ -1,3 +1,7 @@
+//
+// Written at Google 24 Hours of Good @ Google
+//    Team Create UP from USC
+//
 
 // Mobile App Settings
 var WINDOW_HEIGHT_PERCENT = 0.85

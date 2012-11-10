@@ -9,12 +9,11 @@ for file_name in glob.glob('./*.html.part'):
 		with open('./build/' + file_name[:-5], 'w') as output_file:
 			output_file.write(string.replace(layout, '<!--#content-->', input_file.read()))
 
-print 'Compiled data'
-
+print 'Compiled data.'
 
 
 if (os.path.exists('./build/assets') and shutil.rmtree('./build/assets')):
-	print 'cleared data'
+	print 'Cleared data.'
 
 if (shutil.copytree('./assets/', './build/assets/')):
-	print 'copied data'
+	print 'Copied data.'
