@@ -62,14 +62,13 @@ html, body {
 }
 
 #main_page_nav {
-	padding: 10px 29px;
-	background: url("../images/test.jpg");
+	/*padding: 10px 29px;
+	background: url("../images/test.jpg");*/
 }
 
 #main_page_news {
 	padding: 20px 29px 10px;
-	background: url("../images/news_bg.png"
-	);
+	background: url("../images/news_bg.png");
 }
 
 #main_page_news h1 {

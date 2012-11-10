@@ -12,21 +12,15 @@
         <div id="nav_pane">
             <ul id="main_nav" data-role="listview">
                 <li><a href="about.html">About &gt; </a></li>
-                <li><a href="news.html">News &gt; </a></li>
                 <li><a href="donate.html">Donate &gt; </a></li>
                 <li><a href="contact.html">Contact &gt; </a></li>
+                <li><a id="news" href="news.html">News ↓ </a></li>
             </ul>
         </div>
         <div id="content_pane">
 
         </div>
 
-    <div id="main_page_nav" class="full_height">
-        <ul id="main_nav" data-role="listview">
-            <li><a href="about.html">About &gt; </a></li>
-            <li><a href="audi.html">News &gt; </a></li>
-            <li><a href="bmw.html">Contact &gt; </a></li>
-        </ul>
     </div>
     
     <div id="main_page_news" class="full_height">
