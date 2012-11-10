@@ -123,12 +123,14 @@ ul#news li {
 	margin-bottom: 3px;	
 	list-style: none;
 	clear: both;
+	min-height: 75px;
 }
 
 ul#news li img {
 	float: right;
 	width: 75px;
 	height: auto;
+	margin-left: 5px;
 }
 
 ul#news li h3 {
