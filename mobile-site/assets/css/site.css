@@ -10,8 +10,7 @@ body {
 }
 
 #logo_img {
-	width:95%;
-	margin:0 2px;
+	max-height:120px;
 }
 
 html, body {
@@ -27,17 +26,44 @@ html, body {
 }
 
 #main_page_head {
-	background: url(../images/front_bg.jpg) no-repeat;
+	background: url(../images/front-spread.jpg) no-repeat;
 	padding: 10px 29px;
+	background-size: 100%;
+	text-align: center;
+	position: relative;
 }
 #main_page_nav {
 	padding: 10px 29px;
 }
 
+#main_page_head h1 {
+	text-align: left;
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	font-family: 'Ubuntu Condensed', sans-serif !important;
+	font-size: 40px;
+	line-height: 35px;
+	margin: 0 0 6px 0;
+	padding: 0;
+	text-transform: lowercase;
+	position: absolute;
+	bottom: 50px;
+}
+#main_page_head p {
+	text-align: left;
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0,0,0,1);
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 30px;
+}
+
+.full_height {
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8)
+}
 #logo {
-	background: url("../images/logo.png");
-	width: 330px;
-	height: 101px;
+	width: 90%;
 	padding: 0;
 	margin: 0 auto;
 }
