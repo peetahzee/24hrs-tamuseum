@@ -64,17 +64,10 @@ $(function(){
 function getWPPosts(){
 
 	function checkCategory(categories, target) {
-	for(var i = 0; i < categories.length; i++) {
-		if(categories[i].id == target) return true;
-	};
-	return false;
-	}
-
-	function stripImg(content) {
-		return content;
-	}
-	function stripEmptyP(content) {
-		return content.
+		for(var i = 0; i < categories.length; i++) {
+			if(categories[i].id == target) return true;
+		};
+		return false;
 	}
 
 	function getInfo(){
@@ -148,7 +141,7 @@ function getWPPosts(){
 		// utilizing localStorage
 		try { 
 			if (('localStorage' in window && window['localStorage'] !== null)){
-				localStorage.setItem(JSON.stringify({'news_entries': data, last_done: Time.new()}));
+				localStorage.setItem(JSON.stringify({'news_entries': data, 'last_done': Time.new()}));
 			}
 		} catch (e){
 
