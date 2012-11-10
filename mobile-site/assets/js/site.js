@@ -21,11 +21,7 @@ $(function(){
 
 	$('#main_nav a').click(function(evt){
 		evt.preventDefault();
-		if ($(this).is('#news')){
-			$('body').animate({scrollTop: $('#main_page_news').offset().top}, 500);
-		} else {
-			window.location.hash = '#!/' + $(this).attr('href');
-		}
+		window.location.hash = '#!/' + $(this).attr('href');
 		return false;
 	});
 
