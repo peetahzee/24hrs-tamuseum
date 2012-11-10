@@ -6,8 +6,6 @@ $(function(){
 		$('#main_page_nav:not(.expanded)').css('height', $(window).height()*0.85);
 	}).trigger('resize');
 	
-	getWPPosts();
-	
 	var zIndex = 1;
 	$($(".full_height").get().reverse()).each(function() {
 		$(this).css("z-index", zIndex);
@@ -19,7 +17,6 @@ $(function(){
 		if ($(this).is('#news')){
 			$('body').animate({scrollTop: $('#main_page_news').offset().top}, 500);
 		} else {
-			//doNavigate($(this).attr('href'));
 			window.location.hash = '#!/' + $(this).attr('href');
 		}
 		return false;
@@ -28,11 +25,11 @@ $(function(){
 	function doNavigate(page){
 		$('#content_pane').load(page+' .wrapper', function(content){
 			$('#main_page_nav')
-				.animate({'margin-left': '-100%'}, 1000, function(){
-					$(this)
+				//.animate({'margin-left': '-100%'}, 1000, function(){
+					//$(this)
 						.height($('#content_pane .wrapper').height())
 						.addClass('expanded');
-				})
+				//});
 		});
 	}
 
@@ -44,17 +41,16 @@ $(function(){
 			doNavigate(window.location.hash.substr(3));
 		} else {
 			$('#main_page_nav')
-				.animate({'margin-left': '0'}, 1000)
+				//.animate({'margin-left': '0'}, 1000)
 				.removeClass('expanded');
 		}
 	}).trigger('hashchange');
 
-	// load youtube videos: 
-
+	getWPPosts();
+	
 });
 
-
-
+// load youtube videos: 
 function loadVideos(){
 
 }
