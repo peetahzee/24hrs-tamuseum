@@ -4,9 +4,10 @@
 
 }
 
-.about_title {
+.about_title { /* can't override jq mobile! */
 	font-weight: bold;
 	font-size: 20px;
+	color: green;
 }
 
 .about_description {
