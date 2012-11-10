@@ -14,6 +14,8 @@ body {
 a {
 	text-decoration: none;
 	color: inherit;
+	opacity: .8;
+	font-style: italic;
 }
 
 #main_page {
@@ -250,8 +252,6 @@ ul#main_nav li .ui-icon {
 .about_link {
 	display: inline-block;
 	color: white;
-	text-decoration: underline;
-	font-style: italic;
 }
 /* end about stuff */
 
@@ -290,10 +290,6 @@ ul#main_nav li .ui-icon {
 	background: rgba(0,0,0,0.3);
 	bottom: 0px;
 	position: absolute;
-}
-a.story_link {
-	color: #3BB9FF; /* deep sky blue */
-	opacity: .8;
 }
 /* end stories */
 
