@@ -187,6 +187,13 @@ ul#main_nav li .ui-icon {
 #main_page_nav {
 	width: 200%;
 	background: url(../images/test.jpg);
+	
+	-webkit-transition:all .2s linear;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+#main_page_nav.expanded {
+	-webkit-transform: translate3d(-50%,0,0);
 }
 
 /* end nav pane */

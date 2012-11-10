@@ -1,3 +1,13 @@
 <div id="donate" data-role="page">
-    PayPal stuff here
+	
+	<h1>Donate Today</h1>
+
+    <form action="#" id="donate_form">
+    	<!--<label for="donation_amount">Donation Amount:</label>-->
+    	<div id="donation_amount">$<input type="number" name="amount" value="25" /></div>
+    	<!-- big number input to 
+    	<input type="submit" value="Donate" />
+    	<!-- ^ gradient css3 image button -->
+    </form>
+
 </div>
