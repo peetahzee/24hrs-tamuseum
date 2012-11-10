@@ -3,6 +3,7 @@ $(function(){
 	$(window).resize(function() {
 		$(".full_height").css('min-height', $(window).height()*0.85);
 		$(".full_height:last").css('min-height', $(window).height());
+		$('#main_page_nav:not(.expanded)').css('height', $(window).height()*0.85);
 	}).trigger('resize');
 	
 	getWPPosts();
@@ -28,7 +29,9 @@ $(function(){
 		$('#content_pane').load(page+' .wrapper', function(content){
 			$('#main_page_nav')
 				.animate({'margin-left': '-100%'}, 1000, function(){
-					$(this).height($('#content_pane .wrapper').height()).addClass('resized');
+					$(this)
+						.height($('#content_pane .wrapper').height())
+						.addClass('expanded');
 				})
 		});
 	}
@@ -41,7 +44,8 @@ $(function(){
 			doNavigate(window.location.hash.substr(3));
 		} else {
 			$('#main_page_nav')
-				.animate({'margin-left': '0'}, 1000);
+				.animate({'margin-left': '0'}, 1000)
+				.removeClass('expanded');
 		}
 	}).trigger('hashchange');
 
