@@ -31,7 +31,14 @@
     </div>
     
     <div id="main_page_news" class="full_height">
-        <h1>Updates</h1>
+        <a href="http://tamuseum.org?nomobi=1">Full Site</a>
+		
+		<h1>Executive Director</h1>
+        <ul id="exec_director" class="news_list">
+        loading...
+        </ul>
+		
+		<h1>Updates</h1>
         <ul id="news" class="news_list">
         loading...
         </ul>
@@ -40,13 +47,8 @@
         <ul id="aviation" class="news_list">
         loading...
         </ul>
-        
-        <h1>Executive Director</h1>
-        <ul id="exec_director" class="news_list">
-        loading...
-        </ul>
-        
-        <footer><a href="http://tamuseum.org?nomobi=1">Full Site</a></footer>
+                
+        <footer>©2012 <a href="http://tamuseum.org?nomobi=1">Tomorrow's Aeronautical Museum</a></footer>
     </div>
 
 </div>
